@@ -1,0 +1,21 @@
+# REGLAS DEL PROYECTO - FLUJO DE VENTAS
+
+## Perfil Tecnológico
+•⁠  ⁠Tech Stack: React (Vite), Tailwind CSS, TypeScript.
+•⁠  ⁠Estado Global: Context API (Usa ⁠ @src/context/CartContext.jsx ⁠).
+•⁠  ⁠Estilos: Usa únicamente clases de Tailwind CSS. No crees archivos .css adicionales.
+
+## Arquitectura y Estructura de Código
+•⁠  ⁠Crea componentes funcionales y usa Hooks (⁠ useState ⁠, ⁠ useEffect ⁠, ⁠ useMemo ⁠).
+•⁠  ⁠Todos los componentes de la interfaz deben ser limpios, accesibles y responsivos (Mobile-first).
+•⁠  ⁠Exporta los componentes por defecto al final del archivo (⁠ export default ComponentName ⁠).
+
+## Reglas de Negocio (Flujo de Ventas)
+•⁠  ⁠Validación de Stock: Antes de avanzar al checkout, siempre verifica la prop ⁠ availableStock ⁠.
+•⁠  ⁠Manejo de Dinero: Usa siempre una función formateadora para mostrar precios (ej. ⁠ formatPrice(total) ⁠). Nunca quemes el símbolo de moneda de forma manual.
+•⁠  ⁠Persistencia: El carrito de compras debe guardarse en ⁠ localStorage ⁠ automáticamente cada vez que mute el estado.
+
+## Preferencias de Respuesta de la IA
+•⁠  ⁠Sé conciso. No me des explicaciones teóricas de cómo funciona React a menos que te lo pida.
+•⁠  ⁠Si vas a modificar un archivo, muéstrame solo el fragmento de código que cambia o el componente afectado, no reescribas las 300 líneas del archivo.
+•⁠  ⁠Escribe comentarios cortos en el código solo si la lógica del negocio del flujo de cobro es compleja (ej. cálculo de impuestos o pasarelas de pago).

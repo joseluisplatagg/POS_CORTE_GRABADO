@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+
+
+@theme {
+  --shadow-3xl: 0 35px 35px rgba(0, 0, 0, 0.55); 
+  --breakpoint-ssm: 300px;
+  --breakpoint-ssmd:638px;
+  --animate-deslizar-derecha: deslizar-derecha 3s ease-in-out forwards;
+  @keyframes deslizar-derecha {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
